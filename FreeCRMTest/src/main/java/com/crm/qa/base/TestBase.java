@@ -37,7 +37,7 @@ public class TestBase {
 	public TestBase(){
 		try {
 			prop = new Properties();
-			FileInputStream ip = new FileInputStream("D:/SeleniumWorkspace/FreeCRMTest/src/main/java/com/crm/qa/config/config.properties");//FileNotFoundException
+			FileInputStream ip = new FileInputStream("D:/MyCode/FreeCRMTest/src/main/java/com/crm/qa/config/config.properties");//FileNotFoundException
 			prop.load(ip); //IOException
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
