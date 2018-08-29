@@ -8,6 +8,27 @@ public class ParentClass {
 		System.out.println("In Parent Class Constructor");
 	}
 	
+	public static void test()
+	{
+		System.out.println("In Parent Class public static method");
+	}
+	public  void print()
+	{
+		System.out.println("In Parent Class public print method");
+	}
+	private static void test_private()
+	{
+		System.out.println("In Parent Class private static method");
+	}
+	protected void test_protected()
+	{
+		System.out.println("In Parent Class protected  method");
+	}
+	final static void test_finalstatic()
+	{
+		System.out.println("In Parent Class final static method");
+	}
+	
 	public ParentClass(int i)
 	{
 		System.out.println("Value of i:" +i);
@@ -21,7 +42,7 @@ public class ParentClass {
 
 	public static void main(String[] args) {
 
-		
+		test_private();
 
 	}
 
