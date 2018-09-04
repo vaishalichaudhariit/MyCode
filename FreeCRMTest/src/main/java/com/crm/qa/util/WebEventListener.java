@@ -23,7 +23,7 @@ as an when the action done (click, findBy etc).
 
 /**
  * @author Vaishali.Chaudhari
- * Add Web Driver fire event - to generate selenium action logs
+ * Add Web Driver fire event - to generate selenium action logs at console 
  */
 public class WebEventListener extends TestBase implements WebDriverEventListener{
 
