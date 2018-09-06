@@ -3,6 +3,9 @@
  */
 package com.crm.qa.testcases;
 
+import java.io.IOException;
+
+import org.json.simple.parser.ParseException;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -14,6 +17,7 @@ import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
 import com.crm.qa.util.TestUtil;
+import com.crm.qa.util.JSONReader;
 
 /**
  * @author Vaishali.Chaudhari
@@ -49,7 +53,7 @@ public class ContactsPageTest extends TestBase {
 				"contacts label is missing on the page");
 	}
 
-	@Test(priority = 4)
+	/*@Test(priority = 4)
 	public void selectSingleContactsTest() {
 		contactsPage.selectContactsByName("Aaaron Peter");
 	}
@@ -60,15 +64,22 @@ public class ContactsPageTest extends TestBase {
 		contactsPage.selectContactsByName("Aaaron Andrew");
 
 	}
-
+*/
+	@DataProvider(name="contacts")
+	public Object[][] getCRMTestData() throws IOException, ParseException
+	{
+		return JSONReader.getdata(prop.getProperty("JSON_path"), "contacts",2 , 2);
+	}
 	
-	@DataProvider
+	
+	/* Take data from Excel sheet 
+	 * @DataProvider
 	public Object[][] getCRMTestData() {
 		Object data[][] = TestUtil.getTestData(sheetName);
 		return data;
-	}
+	}*/
 
-	@Test(priority = 2, dataProvider = "getCRMTestData")
+	@Test(priority = 2, dataProvider = "contacts")
 	public void validateCreateNewContact(String title, String firstName,
 			String lastName, String company) {
 		homePage.clickOnNewContactLink();

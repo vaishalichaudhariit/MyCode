@@ -22,8 +22,8 @@ public class POSTAPITest extends TestBase{
 	
 	TestBase testBase;
 	RestClient restClient;
-	String apiurl;
-	String serviceUrl;
+	String endPointurl;
+	String resourceUrl;
 	String url;
 	CloseableHttpResponse closeableHttpResponse;
 
@@ -31,9 +31,9 @@ public class POSTAPITest extends TestBase{
 	public void setUp() {
 		testBase = new TestBase(); // to call TestBase constructor to use
 								  // Properties
-		apiurl = prop.getProperty("apiURL");
-		serviceUrl = prop.getProperty("serviceURL");
-		url = apiurl + serviceUrl;
+		endPointurl = prop.getProperty("endPointURL");
+		resourceUrl = prop.getProperty("resourceURL");
+		url = endPointurl + resourceUrl;
 		System.out.println(url);
 	}
 	

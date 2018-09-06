@@ -14,10 +14,12 @@ import org.apache.http.impl.client.HttpClients;
 
 public class RestClient {
 
+	
+	CloseableHttpClient httpClient = HttpClients.createDefault(); // createDefault() method - Create one default client connection
 	// 1. GET Method without Headers:
 	public CloseableHttpResponse get(String url)throws ClientProtocolException, IOException {
 
-		CloseableHttpClient httpClient = HttpClients.createDefault(); // createDefault() method - Create one default client connection
+		
 		HttpGet httpGet = new HttpGet(url); // create get request - HttpGet class
 		CloseableHttpResponse closeableHttpResponse = httpClient.execute(httpGet);// hit the GET URL
 
@@ -27,7 +29,7 @@ public class RestClient {
 	// 2. GET Method with Headers:
 	public CloseableHttpResponse get(String url,HashMap<String, String> headerMap) throws ClientProtocolException,IOException {
 
-		CloseableHttpClient httpClient = HttpClients.createDefault(); // createDefault() method - Create one default client connection
+		//CloseableHttpClient httpClient = HttpClients.createDefault(); // createDefault() method - Create one default client connection
 		HttpGet httpGet = new HttpGet(url); // create get request - HttpGet  class
 
 		for (Map.Entry<String, String> entry : headerMap.entrySet()) {
@@ -40,7 +42,7 @@ public class RestClient {
 	
 	//3. POST method:
 	public CloseableHttpResponse post(String url, String entityString, HashMap<String, String> headerMap) throws ClientProtocolException, IOException{
-		CloseableHttpClient httpClient = HttpClients.createDefault();
+		//CloseableHttpClient httpClient = HttpClients.createDefault();
 		HttpPost httpPost = new HttpPost(url); //http post request
 		httpPost.setEntity(new StringEntity(entityString)); //for payload (entityString)
 		
