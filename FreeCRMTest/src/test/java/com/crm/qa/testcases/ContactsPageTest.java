@@ -30,7 +30,8 @@ public class ContactsPageTest extends TestBase {
 	TestUtil testUtil;
 	ContactsPage contactsPage;
 
-	String sheetName = "contacts";
+	//String sheetName = "contacts";
+	
 
 	public ContactsPageTest() {
 		super();
@@ -68,7 +69,8 @@ public class ContactsPageTest extends TestBase {
 	@DataProvider(name="contacts")
 	public Object[][] getCRMTestData() throws IOException, ParseException
 	{
-		return JSONReader.getdata(prop.getProperty("JSON_path"), "contacts",2 , 2);
+		//return JSONReader.getJSONdata("D:/MyCode/FreeCRMTest/src/main/java/com/crm/qa/testdata/FreeCRMTestData.json", "contacts",4);
+		return JSONReader.getdata(prop.getProperty("JSON_path")+"FreeCRMTestData.json", "contacts",2 , 4);
 	}
 	
 	
