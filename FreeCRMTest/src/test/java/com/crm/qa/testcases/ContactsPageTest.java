@@ -3,7 +3,9 @@
  */
 package com.crm.qa.testcases;
 
+import java.io.File;
 import java.io.IOException;
+import java.util.Map;
 
 import org.json.simple.parser.ParseException;
 import org.testng.Assert;
@@ -16,8 +18,15 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
-import com.crm.qa.util.TestUtil;
 import com.crm.qa.util.JSONReader;
+import com.crm.qa.util.TestUtil;
+
+
+
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 /**
  * @author Vaishali.Chaudhari
@@ -48,13 +57,13 @@ public class ContactsPageTest extends TestBase {
 		contactsPage = homePage.clickOnContactsLink();
 	}
 
-	@Test(priority = 1)
+	/*@Test(priority = 1)
 	public void verifyContactsPageLabel() {
 		Assert.assertTrue(contactsPage.verifyContactsLabel(),
 				"contacts label is missing on the page");
 	}
 
-	/*@Test(priority = 4)
+	@Test(priority = 4)
 	public void selectSingleContactsTest() {
 		contactsPage.selectContactsByName("Aaaron Peter");
 	}
@@ -81,12 +90,31 @@ public class ContactsPageTest extends TestBase {
 		return data;
 	}*/
 
-	@Test(priority = 2, dataProvider = "contacts")
+	/*@Test(priority = 2, dataProvider = "contacts")
 	public void validateCreateNewContact(String title, String firstName,
 			String lastName, String company) {
 		homePage.clickOnNewContactLink();
 		// contactsPage.createNewContact("Mr.", "Tom", "Peter", "Google");
 		contactsPage.createNewContact(title, firstName, lastName, company);
+
+	}*/
+	
+	@Test(priority = 1)
+	public void validateCreateNewContact() throws JsonParseException, JsonMappingException, IOException {
+		homePage.clickOnNewContactLink();
+	
+		 ObjectMapper mapper = new ObjectMapper();
+
+         // read JSON from a file
+         Map<String, Object> jsonMap = mapper.readValue(new File(
+        		 "D:\\FreeCRMTestData.json"),
+                 new TypeReference<Map<String, Object>>(){});
+         
+         System.out.println("*** JSON File Contents ***");
+         System.out.println("title : "+jsonMap.get("title"));
+         System.out.println("firstName : "+jsonMap.get("firstName"));
+         System.out.println("lastName : "+jsonMap.get("lastName"));
+         System.out.println("company : "+jsonMap.get("company"));
 
 	}
 	 

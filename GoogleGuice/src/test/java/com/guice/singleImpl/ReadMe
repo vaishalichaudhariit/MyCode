@@ -1,0 +1,13 @@
+Injecting Single Interface Implementation with Google Guice
+How to DI (@Inject) a single implementation of an Interface into another Class
+Via...
+1. Explicit bind in Guice module
+	a. Create one Interface with getDiscount method declaration (Discountable)
+	b. Implementation class for Interface (EarlyBirdDiscount, NightOwlDiscount)
+	c. Service class with constructor with Implementation of Interface with @Inject  (Implementation to pickup)and checkout method (CheckoutService)
+	d. Main class with main method instanciate GuiceModule here
+		use Guice Factory method - 
+ 	Injector guice = Guice.createInjector(new DiscountGuiceModule());
+	e. GuiceModule extends com.google.inject.AbstractModule with protected configure method - binding happened here
+2. @ImplementedBy
+3. Both 1 and 2 together

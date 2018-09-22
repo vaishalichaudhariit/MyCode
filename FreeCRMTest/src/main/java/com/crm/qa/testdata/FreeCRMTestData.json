@@ -4,12 +4,6 @@
             "firstName": "Tom",
             "lastName": "Peter",
             "company": "IBM"
-        },
-        {
-            "title": "Mrs.",
-            "firstName": "Jemmy",
-            "lastName": "Peter",
-            "company": "Google"
         }
     ]
 }

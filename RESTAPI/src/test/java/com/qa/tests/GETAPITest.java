@@ -60,8 +60,9 @@ public class GETAPITest extends TestBase {
 		// per_page:
 		String perPageValue = TestUtil.getValueByJPath(responseJson,
 				"/per_page");
+		int perPageExValue = 3;
 		System.out.println("value of per page is--->" + perPageValue);
-		Assert.assertEquals(Integer.parseInt(perPageValue), 3);
+		Assert.assertEquals(Integer.parseInt(perPageValue), perPageExValue);
 
 		// total:
 		String totalValue = TestUtil.getValueByJPath(responseJson, "/total");
