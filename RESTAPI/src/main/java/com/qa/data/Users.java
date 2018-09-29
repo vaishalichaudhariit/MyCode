@@ -4,6 +4,7 @@ package com.qa.data;
 //Convert Users class in JSON
 //Marshaling - Java class to Java object to JSON object for that need utility which provided by Jackson  API
 //Project lombok to remove getter and setter method dependency
+
 public class Users {
 	
 	String name;

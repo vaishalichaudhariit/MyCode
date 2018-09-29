@@ -1,0 +1,135 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>4/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sat Sep 29 12:09:28 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>4 seconds (4859 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.qa.rest.tests.TestWeatherAPI.getWeatherInfoofCityWithInValidData()'><b>getWeatherInfoofCityWithInValidData</b><br>Test class: com.qa.rest.tests.TestWeatherAPI<br/>
+<a href="#Output-1134202713" onClick='toggleBox("Output-1134202713", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1134202713" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1134202713">
+Response is: io.restassured.internal.RestAssuredResponseImpl@5fb97279<br/>
+Verified the error message successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.rest.tests.TestWeatherAPI@4c70fda8</td></tr>
+<tr>
+<td title='com.qa.rest.tests.TestWeatherAPI.getWeatherInfoofDelhiWithValidData()'><b>getWeatherInfoofDelhiWithValidData</b><br>Test class: com.qa.rest.tests.TestWeatherAPI<br/>
+<a href="#Output-1716164115" onClick='toggleBox("Output-1716164115", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1716164115" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1716164115">
+Response is:{"coord":{"lon":77.22,"lat":28.65},"weather":[{"id":721,"main":"Haze","description":"haze","icon":"50d"}],"base":"stations","main":{"temp":305.15,"pressure":1012,"humidity":49,"temp_min":305.15,"temp_max":305.15},"visibility":3500,"wind":{"speed":4.1,"deg":260},"clouds":{"all":0},"dt":1538200800,"sys":{"type":1,"id":7809,"message":0.2724,"country":"IN","sunrise":1538181781,"sunset":1538224766},"id":1273294,"name":"Delhi","cod":200}<br/>
+Verified the Status code successfully<br/>
+Country code has verified successfully<br/>
+City name has verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.rest.tests.TestWeatherAPI@4c70fda8</td></tr>
+<tr>
+<td title='com.qa.rest.tests.TestWeatherAPI.getWeatherInfoofLondonWithValidData()'><b>getWeatherInfoofLondonWithValidData</b><br>Test class: com.qa.rest.tests.TestWeatherAPI<br/>
+<a href="#Output-1221981006" onClick='toggleBox("Output-1221981006", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1221981006" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1221981006">
+Response is: {"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02n"}],"base":"stations","main":{"temp":277.85,"pressure":1031,"humidity":81,"temp_min":276.15,"temp_max":281.15},"visibility":10000,"wind":{"speed":0.5},"clouds":{"all":20},"dt":1538200200,"sys":{"type":1,"id":5091,"message":0.0821,"country":"GB","sunrise":1538200687,"sunset":1538242947},"id":2643743,"name":"London","cod":200}<br/>
+Verified the Status Code successfully: {"coord":{"lon":-0.13,"lat":51.51},"weather":[{"id":801,"main":"Clouds","description":"few clouds","icon":"02n"}],"base":"stations","main":{"temp":277.85,"pressure":1031,"humidity":81,"temp_min":276.15,"temp_max":281.15},"visibility":10000,"wind":{"speed":0.5},"clouds":{"all":20},"dt":1538200200,"sys":{"type":1,"id":5091,"message":0.0821,"country":"GB","sunrise":1538200687,"sunset":1538242947},"id":2643743,"name":"London","cod":200}<br/>
+Country code has verified successfully<br/>
+City name has verified successfully<br/>
+</div>
+</td>
+<td></td>
+<td>3</td>
+<td>com.qa.rest.tests.TestWeatherAPI@4c70fda8</td></tr>
+<tr>
+<td title='com.qa.rest.tests.TestWeatherAPI.getWeatherInfoofTokenWithInValidData()'><b>getWeatherInfoofTokenWithInValidData</b><br>Test class: com.qa.rest.tests.TestWeatherAPI<br/>
+<a href="#Output-1959708563" onClick='toggleBox("Output-1959708563", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1959708563" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1959708563">
+Response is: io.restassured.internal.RestAssuredResponseImpl@f9b7332<br/>
+Verified the error message successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>com.qa.rest.tests.TestWeatherAPI@4c70fda8</td></tr>
+</table><p>
+</body>
+</html>

@@ -2,16 +2,38 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="3519" started-at="2018-09-01T17:19:31Z" finished-at="2018-09-01T17:19:35Z">
+  <suite name="Default suite" duration-ms="4574" started-at="2018-09-29T11:33:03Z" finished-at="2018-09-29T11:33:08Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="3519" started-at="2018-09-01T17:19:31Z" finished-at="2018-09-01T17:19:35Z">
-      <class name="com.qa.rest.tests.GetCallBDD">
-        <test-method status="PASS" signature="test_numberofCircuitsFor2017()[pri:0, instance:com.qa.rest.tests.GetCallBDD@7ac7a4e4]" name="test_numberofCircuitsFor2017" duration-ms="3486" started-at="2018-09-01T22:49:32Z" finished-at="2018-09-01T22:49:35Z">
+    <test name="Default test" duration-ms="4574" started-at="2018-09-29T11:33:03Z" finished-at="2018-09-29T11:33:08Z">
+      <class name="com.qa.rest.tests.DeleteRequest">
+        <test-method status="PASS" signature="beforeMethod(java.lang.reflect.Method)[pri:0, instance:com.qa.rest.tests.DeleteRequest@3ffc5af1]" name="beforeMethod" is-config="true" duration-ms="284" started-at="2018-09-29T17:03:03Z" finished-at="2018-09-29T17:03:03Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public static void com.qa.rest.tests.DeleteRequest.putRequest()]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- test_numberofCircuitsFor2017 -->
-      </class> <!-- com.qa.rest.tests.GetCallBDD -->
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="putRequest()[pri:0, instance:com.qa.rest.tests.DeleteRequest@3ffc5af1]" name="putRequest" duration-ms="3860" started-at="2018-09-29T17:03:03Z" finished-at="2018-09-29T17:03:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- putRequest -->
+        <test-method status="PASS" signature="afterMethod(org.testng.ITestResult)[pri:0, instance:com.qa.rest.tests.DeleteRequest@3ffc5af1]" name="afterMethod" is-config="true" duration-ms="402" started-at="2018-09-29T17:03:07Z" finished-at="2018-09-29T17:03:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=putRequest status=SUCCESS method=DeleteRequest.putRequest()[pri:0, instance:com.qa.rest.tests.DeleteRequest@3ffc5af1] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.qa.rest.tests.DeleteRequest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
