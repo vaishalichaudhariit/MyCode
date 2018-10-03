@@ -11,10 +11,16 @@ import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
+import java.util.Set;
 
 import javax.json.JsonArray;
 import javax.json.JsonException;
 import javax.json.JsonObject;
+
+import org.json.simple.JSONObject;
+
+import com.google.gson.JsonElement;
+
 
 /**
  * @author Vaishali.Chaudhari
@@ -22,7 +28,19 @@ import javax.json.JsonObject;
  */
 public class JSONUtil {
 	
+	
+/*	
+public static HashMap<String, Object> readJson(String json) {
 
+JSONObject obj = JSONObject.fromObject(json);
+Iterator i = obj.entrySet().iterator();
+while (i.hasNext()) {
+   Map.Entry e = (Map.Entry)i.next();
+   System.out.println("Key: " + e.getKey());
+   System.out.println("Value: " + e.getValue());
+}
+}
+*/
 
 	 public static Map<String, Object> jsonToMap(JsonObject json) {
 	        Map<String, Object> retMap = new HashMap<String, Object>();
