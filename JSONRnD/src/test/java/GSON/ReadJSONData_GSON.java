@@ -11,7 +11,7 @@ import com.google.gson.JsonIOException;
 public class ReadJSONData_GSON {
 	
 	@SuppressWarnings("unchecked")
-	public static Map <String,Object>read() throws JsonIOException, IOException{
+	public static Map<String,Object> read() throws JsonIOException, IOException{
 		Gson gson = new Gson(); 
 		NewRequisition obj = new NewRequisition();
 		//String json = "{\"k1\":\"v1\",\"k2\":\"v2\"}";
@@ -30,5 +30,6 @@ public class ReadJSONData_GSON {
 		Map <String,Object> map1 = read();
 		System.out.println(map1);
 	}
+	//Test
 	
 }
