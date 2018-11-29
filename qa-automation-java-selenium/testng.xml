@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Gmail Send Mail Suite" parallel="tests" thread-count="3">
+<listeners>
+		<listener class-name="com.crossover.e2e.reports.ExtentReporterNG" />
+</listeners>
+  <test name="Gmail Send Mail Test on Firefox">
+   <parameter name="browserName"  value="firefox"/>
+     <classes>
+      <class name="com.crossover.e2e.tests.SendEmailTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Gmail Send Mail Test on IE">
+   <parameter name="browserName"  value="iexplore"/>
+     <classes>
+      <class name="com.crossover.e2e.tests.SendEmailTest"/>
+    </classes>
+  </test> <!-- Test -->
+   <test name="Gmail Send Mail Test on Chrome">
+   <parameter name="browserName"  value="chrome"/>
+     <classes>
+      <class name="com.crossover.e2e.tests.SendEmailTest"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

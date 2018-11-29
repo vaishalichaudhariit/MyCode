@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [Gmail Send Mail Suite]" parallel="tests">
+  <listeners>
+    <listener class-name="com.crossover.e2e.reports.ExtentReporterNG"/>
+  </listeners>
+  <test thread-count="3" name="Gmail Send Mail Test on Chrome(failed)" parallel="tests">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.crossover.e2e.tests.SendEmailTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+          <include name="gmailSendMailTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crossover.e2e.tests.SendEmailTest -->
+    </classes>
+  </test> <!-- Gmail Send Mail Test on Chrome(failed) -->
+  <test thread-count="3" name="Gmail Send Mail Test on IE(failed)" parallel="tests">
+    <parameter name="browserName" value="iexplore"/>
+    <classes>
+      <class name="com.crossover.e2e.tests.SendEmailTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+          <include name="gmailSendMailTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crossover.e2e.tests.SendEmailTest -->
+    </classes>
+  </test> <!-- Gmail Send Mail Test on IE(failed) -->
+  <test thread-count="3" name="Gmail Send Mail Test on Firefox(failed)" parallel="tests">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.crossover.e2e.tests.SendEmailTest">
+        <methods>
+          <include name="initialization"/>
+          <include name="tearDown"/>
+          <include name="gmailSendMailTest"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.crossover.e2e.tests.SendEmailTest -->
+    </classes>
+  </test> <!-- Gmail Send Mail Test on Firefox(failed) -->
+</suite> <!-- Failed suite [Gmail Send Mail Suite] -->

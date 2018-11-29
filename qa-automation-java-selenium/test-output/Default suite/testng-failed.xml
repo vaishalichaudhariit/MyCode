@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test thread-count="5" name="Default test(failed)">
+    <classes>
+      <class name="com.crossover.e2e.tests.SendEmailTest">
+        <methods>
+          <include name="gmailVerifyEmailIDTest"/>
+          <include name="tearDown"/>
+          <include name="gmailSendMailTest"/>
+          <include name="gmailVerifyEmailBodyTest"/>
+          <include name="gmailVerifyEmailSubjectTest"/>
+          <include name="setUp"/>
+          <include name="gmailVerifyAttachmentNameTest"/>
+          <include name="gmailVerifyEmailOnSocialLabelTest"/>
+        </methods>
+      </class> <!-- com.crossover.e2e.tests.SendEmailTest -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
