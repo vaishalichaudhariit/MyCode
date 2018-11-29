@@ -1,0 +1,5 @@
+How to use a Guice @Provider Part 2
+
+- Injecting into providers (Example : Inject a Random Implementation)
+	-Java buit in class
+	- Guice MapBinderr

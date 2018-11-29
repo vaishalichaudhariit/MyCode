@@ -1,0 +1,3 @@
+
+How do I inject differernt implementations based on conditional logic? 
+- Guice gives you free Providers!! (late binding and late instancesiation)
