@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/SeleniumWorkspace/Cucumber-jvm/src/test/java/Features/hooks.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature");
 formatter.feature({
   "line": 1,
   "name": "Free CRM app test",
@@ -7,11 +7,15 @@ formatter.feature({
   "keyword": "Feature"
 });
 formatter.before({
-  "duration": 531011,
+  "duration": 415409,
   "status": "passed"
 });
 formatter.before({
-  "duration": 259833,
+  "duration": 221480,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 138289,
   "status": "passed"
 });
 formatter.scenario({
@@ -53,37 +57,45 @@ formatter.match({
   "location": "HooksStepDefinition.user_is_on_deal_page()"
 });
 formatter.result({
-  "duration": 359398439,
+  "duration": 194154886,
   "status": "passed"
 });
 formatter.match({
   "location": "HooksStepDefinition.user_fills_the_deals_form()"
 });
 formatter.result({
-  "duration": 144232,
+  "duration": 98315,
   "status": "passed"
 });
 formatter.match({
   "location": "HooksStepDefinition.deal_is_created()"
 });
 formatter.result({
-  "duration": 108579,
+  "duration": 138830,
   "status": "passed"
 });
 formatter.after({
-  "duration": 99936,
+  "duration": 25813707,
   "status": "passed"
 });
 formatter.after({
-  "duration": 155036,
+  "duration": 96155,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 106418,
   "status": "passed"
 });
 formatter.before({
-  "duration": 226341,
+  "duration": 246868,
   "status": "passed"
 });
 formatter.before({
-  "duration": 108579,
+  "duration": 143151,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 117223,
   "status": "passed"
 });
 formatter.scenario({
@@ -119,29 +131,33 @@ formatter.match({
   "location": "HooksStepDefinition.user_is_on_contact_page()"
 });
 formatter.result({
-  "duration": 117763,
+  "duration": 117762,
   "status": "passed"
 });
 formatter.match({
   "location": "HooksStepDefinition.user_fills_the_contact_form()"
 });
 formatter.result({
-  "duration": 132888,
+  "duration": 124244,
   "status": "passed"
 });
 formatter.match({
   "location": "HooksStepDefinition.contact_is_created()"
 });
 formatter.result({
-  "duration": 113981,
+  "duration": 85890,
   "status": "passed"
 });
 formatter.after({
-  "duration": 109660,
+  "duration": 96154,
   "status": "passed"
 });
 formatter.after({
-  "duration": 162059,
+  "duration": 62663,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 110199,
   "status": "passed"
 });
 formatter.scenarioOutline({
@@ -204,11 +220,15 @@ formatter.examples({
   "keyword": "Examples"
 });
 formatter.before({
-  "duration": 245248,
+  "duration": 1311051,
   "status": "passed"
 });
 formatter.before({
-  "duration": 176104,
+  "duration": 119383,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 91292,
   "status": "passed"
 });
 formatter.scenario({
@@ -244,37 +264,45 @@ formatter.match({
   "location": "HooksStepDefinition.user_is_on_mail_page()"
 });
 formatter.result({
-  "duration": 151254,
+  "duration": 133968,
   "status": "passed"
 });
 formatter.match({
   "location": "HooksStepDefinition.user_fills_the_mail_form()"
 });
 formatter.result({
-  "duration": 131268,
+  "duration": 2868970,
   "status": "passed"
 });
 formatter.match({
   "location": "HooksStepDefinition.mail_is_created()"
 });
 formatter.result({
-  "duration": 109659,
+  "duration": 122084,
   "status": "passed"
 });
 formatter.after({
-  "duration": 153956,
+  "duration": 70765,
   "status": "passed"
 });
 formatter.after({
-  "duration": 108579,
+  "duration": 57801,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 53479,
   "status": "passed"
 });
 formatter.before({
-  "duration": 248489,
+  "duration": 264154,
   "status": "passed"
 });
 formatter.before({
-  "duration": 112901,
+  "duration": 125866,
+  "status": "passed"
+});
+formatter.before({
+  "duration": 63202,
   "status": "passed"
 });
 formatter.scenario({
@@ -310,7 +338,7 @@ formatter.match({
   "location": "HooksStepDefinition.user_is_on_mail_page()"
 });
 formatter.result({
-  "duration": 108039,
+  "duration": 107499,
   "status": "passed"
 });
 formatter.match({
@@ -324,15 +352,19 @@ formatter.match({
   "location": "HooksStepDefinition.mail_is_created()"
 });
 formatter.result({
-  "duration": 82650,
+  "duration": 110199,
   "status": "passed"
 });
 formatter.after({
-  "duration": 106419,
+  "duration": 74546,
   "status": "passed"
 });
 formatter.after({
-  "duration": 76708,
+  "duration": 70765,
+  "status": "passed"
+});
+formatter.after({
+  "duration": 74007,
   "status": "passed"
 });
 });

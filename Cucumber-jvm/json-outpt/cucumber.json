@@ -1,0 +1,458 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "comments": [
+          {
+            "line": 3,
+            "value": "# Hook is for pre and post condition to execute our test scenarios"
+          }
+        ],
+        "before": [
+          {
+            "result": {
+              "duration": 415409,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 221480,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 138289,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.beforeFirst()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "Free CRM Create deal test",
+        "description": "",
+        "id": "free-crm-app-test;free-crm-create-deal-test",
+        "after": [
+          {
+            "result": {
+              "duration": 25813707,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.afterFirst()"
+            }
+          },
+          {
+            "result": {
+              "duration": 96155,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 106418,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 194154886,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is on deal page",
+            "match": {
+              "location": "HooksStepDefinition.user_is_on_deal_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 98315,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user fills the deals form",
+            "match": {
+              "location": "HooksStepDefinition.user_fills_the_deals_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138830,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "deal is created",
+            "match": {
+              "location": "HooksStepDefinition.deal_is_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@First"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 246868,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 143151,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 117223,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.beforeSecond()"
+            }
+          }
+        ],
+        "line": 12,
+        "name": "Free CRM Create contact test",
+        "description": "",
+        "id": "free-crm-app-test;free-crm-create-contact-test",
+        "after": [
+          {
+            "result": {
+              "duration": 96154,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.afterSecond()"
+            }
+          },
+          {
+            "result": {
+              "duration": 62663,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 110199,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 117762,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user is on contact page",
+            "match": {
+              "location": "HooksStepDefinition.user_is_on_contact_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 124244,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user fills the contact form",
+            "match": {
+              "location": "HooksStepDefinition.user_fills_the_contact_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 85890,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "contact is created",
+            "match": {
+              "location": "HooksStepDefinition.contact_is_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Second"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 1311051,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 119383,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 91292,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.beforeThird()"
+            }
+          }
+        ],
+        "line": 24,
+        "name": "Free CRM Create mail test",
+        "description": "",
+        "id": "free-crm-app-test;free-crm-create-mail-test;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 70765,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.afterThird()"
+            }
+          },
+          {
+            "result": {
+              "duration": 57801,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 53479,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 133968,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on mail page",
+            "match": {
+              "location": "HooksStepDefinition.user_is_on_mail_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2868970,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user fills the mail form",
+            "match": {
+              "location": "HooksStepDefinition.user_fills_the_mail_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 122084,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "mail is created",
+            "match": {
+              "location": "HooksStepDefinition.mail_is_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@Third"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 264154,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP()"
+            }
+          },
+          {
+            "result": {
+              "duration": 125866,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.setUP1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 63202,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.beforeThird()"
+            }
+          }
+        ],
+        "line": 25,
+        "name": "Free CRM Create mail test",
+        "description": "",
+        "id": "free-crm-app-test;free-crm-create-mail-test;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 74546,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.afterThird()"
+            }
+          },
+          {
+            "result": {
+              "duration": 70765,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown1()"
+            }
+          },
+          {
+            "result": {
+              "duration": 74007,
+              "status": "passed"
+            },
+            "match": {
+              "location": "HooksStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 107499,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user is on mail page",
+            "match": {
+              "location": "HooksStepDefinition.user_is_on_mail_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 89672,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user fills the mail form",
+            "match": {
+              "location": "HooksStepDefinition.user_fills_the_mail_form()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 110199,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "mail is created",
+            "match": {
+              "location": "HooksStepDefinition.mail_is_created()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 17,
+            "name": "@Third"
+          }
+        ]
+      }
+    ],
+    "name": "Free CRM app test",
+    "description": "`",
+    "id": "free-crm-app-test",
+    "keyword": "Feature",
+    "uri": "D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature"
+  }
+]

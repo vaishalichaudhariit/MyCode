@@ -20,7 +20,7 @@ public class GETAPITest extends TestBase {
 
 	TestBase testBase;
 	RestClient restClient;
-	String endPointurl;
+	String endPointUrl;
 	String resourceUrl;
 	String url;
 	CloseableHttpResponse closeableHttpResponse;
@@ -29,9 +29,9 @@ public class GETAPITest extends TestBase {
 	public void setUp() {
 		testBase = new TestBase(); // to call TestBase constructor to use
 								  // Properties
-		endPointurl = prop.getProperty("endPointURL");
+		endPointUrl = prop.getProperty("endPointURL");
 		resourceUrl = prop.getProperty("resourceURL");
-		url = endPointurl + resourceUrl;
+		url = endPointUrl + resourceUrl;
 		System.out.println(url);
 	}
 

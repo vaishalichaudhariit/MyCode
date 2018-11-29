@@ -1,5 +1,6 @@
 package stepDefinition;
 
+import junit.framework.Assert;
 import cucumber.api.java.After;
 import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
@@ -42,6 +43,7 @@ public class HooksStepDefinition {
 	@After("@First")
 	public void afterFirst(){
 		System.out.println("after only first scenario");
+		Assert.assertTrue(true);
 	}
 		
 	

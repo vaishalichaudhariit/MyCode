@@ -3,10 +3,10 @@ package Analyzer;
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
-public class RetryAnalyzer implements IRetryAnalyzer {
+public class RetryAnalyzerClass implements IRetryAnalyzer {
 	
 	int counter = 0;
-	int retryLimit = 3;
+	int retryLimit = 2;
 	
 	
 	//override retry method of IRetryAnalyzer Interface

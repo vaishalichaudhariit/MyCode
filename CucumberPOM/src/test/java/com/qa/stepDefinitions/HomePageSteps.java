@@ -17,7 +17,7 @@ public class HomePageSteps extends TestBase{
 	@Given("^user opens browser$")
 	public void user_opens_browser() throws Throwable {
 		// Write code here that turns the phrase above into concrete actions
-		TestBase.initialization();
+		initialization();
 	}
 
 	@Then("^user is on login page$")

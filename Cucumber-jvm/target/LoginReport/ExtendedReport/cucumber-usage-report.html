@@ -1,0 +1,306 @@
+<html><head><style type="text/css">h1 {background-color:#9999CC}
+h2 {background-color:#BBBBCC}
+h3 {background-color:#DDDDFF}
+th {border:1px solid black;background-color:#CCCCDD;}
+td{border:1px solid black;}
+.none {border:0px none black;}
+table{border:1px solid black;border-collapse: collapse;}
+tr:nth-child(even) {background: #CCC}
+tr:nth-child(odd) {background: #FFF}</style><title>Cucumber Steps Usage Report</title></head><body><h1>Cucumber Usage Statistics</h1><h2>Overview Graph</h2><p><svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="500" height="400"><defs><filter id="f1" x="0" y="0" width="200%" height="200%"><feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" /><feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" /><feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter><radialGradient id="grad1" cx="0%" cy="100%" r="150%" fx="0%" fy="100%"><stop offset="0%" style="stop-color:white;stop-opacity:0.1" /><stop offset="100%" style="stop-color:gold;stop-opacity:0.7" /></radialGradient><linearGradient id="grad2" cx="0%" cy="100%" r="150%" fx="0%" fy="100%"><stop offset="0%" style="stop-color:red;stop-opacity:0.7" /><stop offset="50%" style="stop-color:yellow;stop-opacity:0.7" /><stop offset="100%" style="stop-color:green;stop-opacity:0.7" /></linearGradient></defs><rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad1)" filter="url(#f1)" /><line x1="40" y1="30" x2="40" y2="300" style="stroke:black;stroke-width:1" /><line x1="40" y1="300" x2="350" y2="300" style="stroke:black;stroke-width:1" /><polygon points="35,50 40,30 45,50" style="fill:black;stroke:black;stroke-width:1"/><polygon points="350,300 330,305 330,295" style="fill:black;stroke:black;stroke-width:1"/><polygon points="40,300 40,300 130,95 220,198 310,300" style="stroke:black;stroke-width:1"  fill="url(#grad2)" /><line x1="40" y1="300" x2="40" y2="305" style="stroke:black;stroke-width:1" /><text x="40" y="310" font-size = "8">0</text><line x1="130" y1="300" x2="130" y2="305" style="stroke:black;stroke-width:1" /><text x="130" y="310" font-size = "8">1</text><line x1="220" y1="300" x2="220" y2="305" style="stroke:black;stroke-width:1" /><text x="220" y="310" font-size = "8">2</text><line x1="40" y1="300" x2="35" y2="300" style="stroke:black;stroke-width:1" /><text x="35" y="300" transform="rotate(-90 35,300)" font-size = "8">0</text><line x1="40" y1="266" x2="35" y2="266" style="stroke:black;stroke-width:1" /><text x="35" y="266" transform="rotate(-90 35,266)" font-size = "8">1</text><line x1="40" y1="232" x2="35" y2="232" style="stroke:black;stroke-width:1" /><text x="35" y="232" transform="rotate(-90 35,232)" font-size = "8">2</text><line x1="40" y1="198" x2="35" y2="198" style="stroke:black;stroke-width:1" /><text x="35" y="198" transform="rotate(-90 35,198)" font-size = "8">3</text><line x1="40" y1="163" x2="35" y2="163" style="stroke:black;stroke-width:1" /><text x="35" y="163" transform="rotate(-90 35,163)" font-size = "8">4</text><line x1="40" y1="129" x2="35" y2="129" style="stroke:black;stroke-width:1" /><text x="35" y="129" transform="rotate(-90 35,129)" font-size = "8">5</text><line x1="40" y1="95" x2="35" y2="95" style="stroke:black;stroke-width:1" /><text x="35" y="95" transform="rotate(-90 35,95)" font-size = "8">6</text><line stroke-dasharray="10,10" x1="130.0" y1="30" x2="130.0" y2="300" style="stroke:yellow;stroke-width:3" /><line stroke-dasharray="10,10" x1="160" y1="30" x2="160" y2="300" style="stroke:red;stroke-width:3" /><rect x="60%" y="20%" width="28%" height="20%" stroke="black" stroke-width="1" fill="white" filter="url(#f1)" /><line x1="62%" y1="29%" x2="67%" y2="29%" stroke-dasharray="5,5" style="stroke:red;stroke-width:3" /><text x="69%" y="30%" font-weight = "bold" font-size = "12">Average: 1.3</text><line x1="62%" y1="34%" x2="67%" y2="34%" stroke-dasharray="5,5" style="stroke:yellow;stroke-width:3" /><text x="69%" y="35%" font-weight = "bold" font-size = "12">Median: 1</text><text x="60%" y="55%" font-weight = "bold" font-size = "40" fill="red">25.0%</text><text x="66%" y="60%" font-weight = "bold" font-size = "16" fill="red">Re-use</text><text x="120" y="330" font-weight = "bold" font-size = "14" >Step re-use count</text><text x="20" y="220" font-weight = "bold" font-size = "14" transform="rotate(-90 20,220)">Steps count</text></svg></p><h2>Overview Table</h2><p><table><tr><th rowspan="2"><a id="top">#</a></th><th rowspan="2">Expression</th><th rowspan="2">Occurences</th><th colspan="5">Duration</th></tr><tr><th>Average</th><th>Median</th><th>Minimal</th><th>Maximal</th><th>Total</th></tr><tr style="background:lightgreen"><td>1</td><td width="60%"><a href="#_5Euser-is-on-mail-page_24">^user is on mail page$</a></td><td>2</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td></tr><tr style="background:lightgreen"><td>2</td><td width="60%"><a href="#_5Euser-fills-the-mail-form_24">^user fills the mail form$</a></td><td>2</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td></tr><tr style="background:lightgreen"><td>3</td><td width="60%"><a href="#_5Email-is-created_24">^mail is created$</a></td><td>2</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td></tr><tr style="background:gold"><td>4</td><td width="60%"><a href="#_5Euser-fills-the-deals-form_24">^user fills the deals form$</a></td><td>1</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td></tr><tr style="background:gold"><td>5</td><td width="60%"><a href="#_5Euser-is-on-contact-page_24">^user is on contact page$</a></td><td>1</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td></tr><tr style="background:gold"><td>6</td><td width="60%"><a href="#_5Euser-is-on-deal-page_24">^user is on deal page$</a></td><td>1</td><td>0.19s</td><td>0.19s</td><td>0.19s</td><td>0.19s</td><td>0.19s</td></tr><tr style="background:tomato"><td>7</td><td width="60%"><a href="#_5Edeal-is-created_24">^deal is created$</a></td><td>1</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td></tr><tr style="background:tomato"><td>8</td><td width="60%"><a href="#_5Econtact-is-created_24">^contact is created$</a></td><td>1</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td></tr><tr style="background:tomato"><td>9</td><td width="60%"><a href="#_5Euser-fills-the-contact-form_24">^user fills the contact form$</a></td><td>1</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td><td>0.00s</td></tr></table></p><h1>Cucumber Usage Detailed Information</h1><p><h3><a id="_5Euser-fills-the-deals-form_24">^user fills the deals form$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>user fills the deals form</td><td> - </td><td> - </td></tr><tr><td></td><td>9.8315E-5</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:8</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.00s</td></tr><tr><th>Median</th><td>0.00s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.00s</td></tr><tr><th>Maximum</th><td>0.00s</td></tr><tr><th>Total</th><td>0.00s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5Euser-is-on-contact-page_24">^user is on contact page$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>user is on contact page</td><td> - </td><td> - </td></tr><tr><td></td><td>1.17762E-4</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:13</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.00s</td></tr><tr><th>Median</th><td>0.00s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.00s</td></tr><tr><th>Maximum</th><td>0.00s</td></tr><tr><th>Total</th><td>0.00s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5Euser-is-on-mail-page_24">^user is on mail page$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>user is on mail page</td><td> - </td><td> - </td></tr><tr><td></td><td>1.33968E-4</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:19</td></tr><tr><td></td><td>1.07499E-4</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:19</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.00s</td></tr><tr><th>Median</th><td>0.00s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.00s</td></tr><tr><th>Maximum</th><td>0.00s</td></tr><tr><th>Total</th><td>0.00s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5Euser-is-on-deal-page_24">^user is on deal page$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>user is on deal page</td><td> - </td><td> - </td></tr><tr><td></td><td>0.194154886</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:7</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.19s</td></tr><tr><th>Median</th><td>0.19s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.19s</td></tr><tr><th>Maximum</th><td>0.19s</td></tr><tr><th>Total</th><td>0.19s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5Euser-fills-the-mail-form_24">^user fills the mail form$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>user fills the mail form</td><td> - </td><td> - </td></tr><tr><td></td><td>0.00286897</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:20</td></tr><tr><td></td><td>8.9672E-5</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:20</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.00s</td></tr><tr><th>Median</th><td>0.00s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.00s</td></tr><tr><th>Maximum</th><td>0.00s</td></tr><tr><th>Total</th><td>0.00s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5Edeal-is-created_24">^deal is created$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>deal is created</td><td> - </td><td> - </td></tr><tr><td></td><td>1.3883E-4</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:9</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.00s</td></tr><tr><th>Median</th><td>0.00s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.00s</td></tr><tr><th>Maximum</th><td>0.00s</td></tr><tr><th>Total</th><td>0.00s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5Econtact-is-created_24">^contact is created$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>contact is created</td><td> - </td><td> - </td></tr><tr><td></td><td>8.589E-5</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:15</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.00s</td></tr><tr><th>Median</th><td>0.00s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.00s</td></tr><tr><th>Maximum</th><td>0.00s</td></tr><tr><th>Total</th><td>0.00s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5Euser-fills-the-contact-form_24">^user fills the contact form$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>user fills the contact form</td><td> - </td><td> - </td></tr><tr><td></td><td>1.24244E-4</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:14</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.00s</td></tr><tr><th>Median</th><td>0.00s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.00s</td></tr><tr><th>Maximum</th><td>0.00s</td></tr><tr><th>Total</th><td>0.00s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p><h3><a id="_5Email-is-created_24">^mail is created$</a></h3><p><table><tr><th>Step Name</th><th>Duration</th><th>Location</th></tr><tr><td>mail is created</td><td> - </td><td> - </td></tr><tr><td></td><td>1.22084E-4</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:21</td></tr><tr><td></td><td>1.10199E-4</td><td>D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature:21</td></tr></table></p><p><table class="none"><tr><td class="none"><svg  xmlns="http://www.w3.org/2000/svg" version="1.1" width="400" height="300">
+	<defs>
+		<filter id="f1" x="0" y="0" width="200%" height="200%">
+		<feOffset result="offOut" in="SourceAlpha" dx="10" dy="10" />
+		<feGaussianBlur result="blurOut" in="offOut" stdDeviation="10" />
+		<feBlend in="SourceGraphic" in2="blurOut" mode="normal" /></filter>
+		<radialGradient id="grad4" cx="0%" cy="100%" r="150%" fx="0%"
+			fy="100%">
+		<stop offset="0%" style="stop-color:white;stop-opacity:0.1" />
+		<stop offset="100%" style="stop-color:silver;stop-opacity:0.7" /></radialGradient>
+	</defs>
+<rect width="90%" height="90%" stroke="black" stroke-width="1" fill="url(#grad4)" filter="url(#f1)"/>
+			<line x1="30" y1="30" x2="30" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<line x1="30" y1="240" x2="350" y2="240"
+			style="stroke:black;stroke-width:1" />
+		<polygon points="25,50 30,30 35,50"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<polygon points="350,240 330,245 330,235"
+			style="fill:black;stroke:black;stroke-width:1" />
+		<!-- Scale Marks-->
+		<line x1="40" y1="240" x2="40" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="42" y="253" font-size="8">0.0s</text>
+		<line x1="320" y1="240" x2="320" y2="245"
+			style="stroke:black;stroke-width:1" />
+		<text x="322" y="253" font-size="8">0.0s</text>
+
+		<text x="60" y="220" font-weight="bold" font-size="14"
+			transform="rotate(-90 20,220)">Frequency</text>
+			<text x="140" y="260" font-weight="bold" font-size="14">Duration</text>
+		<!-- Polygon -->
+			<text x="22%" y="55%" font-weight="bold" font-size="120" fill="gray">N/A</text>
+</svg></td><td valign="top" class="none"><p><table><tr><th colspan="2">Duration Characteristic</th></tr><tr><th>Average</th><td>0.00s</td></tr><tr><th>Median</th><td>0.00s</td></tr><tr><th>Variance</th><td>0.00</td></tr><tr><th>Skewness</th><td>0.00</td></tr><tr><th>Minimum</th><td>0.00s</td></tr><tr><th>Maximum</th><td>0.00s</td></tr><tr><th>Total</th><td>0.00s</td></tr></table></p></td></tr></table></p><p><a href="#top">To Overview Table</a></p></p></body></html>

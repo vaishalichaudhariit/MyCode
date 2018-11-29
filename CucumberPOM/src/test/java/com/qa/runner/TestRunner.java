@@ -5,12 +5,11 @@ import org.junit.runner.RunWith;
 import cucumber.api.CucumberOptions;
 import cucumber.api.junit.Cucumber;
 
-
 @RunWith(Cucumber.class)
 @CucumberOptions(
 		features ="D:/SeleniumWorkspace/CucumberPOM/src/test/java/com/qa/features/freecrm.feature" // feature file path
 		,glue={"com/qa/stepDefinitions"}, // step definition file path
-		format={"pretty","html:test-ourput", "json:json-outpt/cucumber.jason", "junit:junit_xml/cucumber.xml"}, //result format
+		format={"pretty","html:test-output", "json:json-output/cucumber.jason", "junit:junit_xml/cucumber.xml"}, //result format
 		monochrome = true, //display the console output in a proper readable format
 		strict = true, //if any step definition not define then test will fail
 		dryRun = false //to check the mapping between feature file and step definition file

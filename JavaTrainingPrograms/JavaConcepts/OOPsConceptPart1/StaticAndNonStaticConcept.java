@@ -27,7 +27,7 @@ public class StaticAndNonStaticConcept {
 		obj.sendMail();
 		System.out.println(obj.name);
 		
-		//Can I access static methods by using objecct reference? yes
+		//Can I access static methods by using object reference? yes
 		obj.sum(); //But not good practice
 	}
 	

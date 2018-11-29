@@ -6,9 +6,13 @@ import cucumber.api.CucumberOptions;
 
 	@RunWith(Cucumber.class)
 	@CucumberOptions(
-			features ="D:/SeleniumWorkspace/Cucumber-jvm/src/test/java/Features/hooks.feature" // feature file path
+			features ="D:/MyCode/Cucumber-jvm/src/test/java/Features/hooks.feature" // feature file path
 			,glue={"stepDefinition"}, // step definition file path
-			format={"pretty","html:test-ourput", "json:json-outpt/cucumber.jason", "junit:junit_xml/cucumber.xml"}, //result format
+			format={"pretty","html:test-ourput",
+					"json:json-outpt/cucumber.json",
+					"junit:junit_xml/cucumber.xml",
+					"rerun:target/rerun.txt",
+					"usage:target/cucumber-usage.json"}, //result format
 			monochrome = true, //display the console output in a proper readable format
 			strict = true, //if any step definition not define then test will fail
 			dryRun = false //to check the mapping between feature file and step definition file
