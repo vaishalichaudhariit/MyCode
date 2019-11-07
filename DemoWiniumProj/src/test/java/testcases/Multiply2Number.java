@@ -26,6 +26,7 @@ public class Multiply2Number {
 	
 			driver.findElement(By.name("Scientific Calculator")).click();
 			System.out.println("Scientific Calculator opened sucessfully");
+			Thread.sleep(3000);
 			
 			
 			driver.findElement(By.name("5")).click();
