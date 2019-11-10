@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Scientific Caclulator Test Automation Test Suite" duration-ms="85314" started-at="2019-11-10T14:15:16Z" finished-at="2019-11-10T14:16:41Z">
+    <groups>
+    </groups>
+    <test name="Scientific Caclulator .Net Desktop App Test Cases" duration-ms="85314" started-at="2019-11-10T14:15:16Z" finished-at="2019-11-10T14:16:41Z">
+      <class name="com.qa.testcases.CalculatorOperationsTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@6f27a732]" name="setUp" is-config="true" duration-ms="6709" started-at="2019-11-10T14:15:16Z" finished-at="2019-11-10T14:15:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calcTitleVerifyTest()[pri:1, instance:com.qa.testcases.CalculatorOperationsTest@6f27a732]" name="calcTitleVerifyTest" duration-ms="416" started-at="2019-11-10T14:15:22Z" finished-at="2019-11-10T14:15:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calcTitleVerifyTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@6f27a732]" name="tearDown" is-config="true" duration-ms="75" started-at="2019-11-10T14:15:23Z" finished-at="2019-11-10T14:15:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@6f27a732]" name="setUp" is-config="true" duration-ms="5176" started-at="2019-11-10T14:15:23Z" finished-at="2019-11-10T14:15:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="calcOperationsTest()[pri:2, instance:com.qa.testcases.CalculatorOperationsTest@6f27a732]" name="calcOperationsTest" duration-ms="72829" started-at="2019-11-10T14:15:28Z" finished-at="2019-11-10T14:16:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- calcOperationsTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@6f27a732]" name="tearDown" is-config="true" duration-ms="65" started-at="2019-11-10T14:16:41Z" finished-at="2019-11-10T14:16:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.testcases.CalculatorOperationsTest -->
+    </test> <!-- Scientific Caclulator .Net Desktop App Test Cases -->
+  </suite> <!-- Scientific Caclulator Test Automation Test Suite -->
+</testng-results>

@@ -33,14 +33,16 @@ public class Multiply2Number {
 			driver.findElement(By.name("*")).click();
 			driver.findElement(By.name("4")).click();
 			driver.findElement(By.name("=")).click();
+			
+			
 
-			Thread.sleep(5000);
+			Thread.sleep(2000);
 
 			String output = driver.findElement(By.id("textBox1")).getAttribute("Name");
 			System.out.println("Output of the multiplication:  " + output);
 			
 			Assert.assertEquals(output, "20");
-		
+			Thread.sleep(1000);
 			
 			Robot robot = new Robot();
 			robot.keyPress(KeyEvent.VK_ALT); //holds down Alt key
