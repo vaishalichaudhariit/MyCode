@@ -20,9 +20,9 @@
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.5.1</version>
 				<configuration>
-					<source>${jdk.level}</source>
-					<target>${jdk.level}</target>
+					<fork>true</fork>
 				</configuration>
+
 			</plugin>
 			<!-- Added Surefire Plugin configuration to execute tests -->
 			<plugin>
