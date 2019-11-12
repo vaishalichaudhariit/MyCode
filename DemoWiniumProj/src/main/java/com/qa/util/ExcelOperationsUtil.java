@@ -207,7 +207,7 @@ public class ExcelOperationsUtil extends TestBase {
 			  
 			  String cellText = String.valueOf((int) cell.getNumericCellValue());
 			
-			  System.out.println(HSSFDateUtil.isCellDateFormatted(cell));
+			 // System.out.println(HSSFDateUtil.isCellDateFormatted(cell));
 			  if (HSSFDateUtil.isCellDateFormatted(cell)) {
 		           // format in form of M/D/YY
 				  double d = cell.getNumericCellValue();
