@@ -5,9 +5,11 @@
     <classes>
       <class name="com.qa.testcases.CalculatorOperationsTest">
         <methods>
+          <include name="getResult"/>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="calcTitleVerifyTest"/>
+          <include name="calcOperationsTest"/>
+          <include name="startReport"/>
         </methods>
       </class> <!-- com.qa.testcases.CalculatorOperationsTest -->
     </classes>

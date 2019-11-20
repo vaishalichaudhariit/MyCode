@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Scientific_Caclulator_Test_Automation_Test_Suite">
-              <span class="suite-name border-passed">Scientific Caclulator Test Automation Test Suite</span>
+              <span class="suite-name border-failed">Scientific Caclulator Test Automation Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Scientific_Caclulator_Test_Automation_Test_Suite" class="hide-methods failed suite-Scientific_Caclulator_Test_Automation_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Scientific_Caclulator_Test_Automation_Test_Suite -->
+                      <a href="#" panel-name="suite-Scientific_Caclulator_Test_Automation_Test_Suite" class="show-methods failed suite-Scientific_Caclulator_Test_Automation_Test_Suite"> (show)</a> <!-- show-methods failed suite-Scientific_Caclulator_Test_Automation_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Scientific_Caclulator_Test_Automation_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Scientific_Caclulator_Test_Automation_Test_Suite" title="com.qa.testcases.CalculatorOperationsTest" hash-for-method="calcOperationsTest">calcOperationsTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Scientific_Caclulator_Test_Automation_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,7 @@
                     <div class="method-list-content passed suite-Scientific_Caclulator_Test_Automation_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Scientific_Caclulator_Test_Automation_Test_Suite" title="com.qa.testcases.CalculatorOperationsTest" hash-for-method="calcOperationsTest">calcOperationsTest</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Scientific_Caclulator_Test_Automation_Test_Suite" title="com.qa.testcases.CalculatorOperationsTest" hash-for-method="calcDiffOperationsTest">calcDiffOperationsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -122,9 +136,9 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Scientific_Caclulator_Test_Automation_Test_Suite" class="panel Scientific_Caclulator_Test_Automation_Test_Suite">
-          <div class="suite-Scientific_Caclulator_Test_Automation_Test_Suite-class-passed">
+          <div class="suite-Scientific_Caclulator_Test_Automation_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
+              <img src="failed.png"/>
               <span class="class-name">com.qa.testcases.CalculatorOperationsTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -133,6 +147,25 @@
                   <a name="calcOperationsTest">
                   </a> <!-- calcOperationsTest -->
                   <span class="method-name">calcOperationsTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: 6 - 2=4 expected [6] but found [4]
+	at com.qa.testcases.CalculatorOperationsTest.calcOperationsTest(CalculatorOperationsTest.java:97)
+... Removed 30 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Scientific_Caclulator_Test_Automation_Test_Suite-class-failed -->
+          <div class="suite-Scientific_Caclulator_Test_Automation_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qa.testcases.CalculatorOperationsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="calcDiffOperationsTest">
+                  </a> <!-- calcDiffOperationsTest -->
+                  <span class="method-name">calcDiffOperationsTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -154,9 +187,6 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Scientific Caclulator Test Automation Test Suite&quot;&gt;
-  &lt;listeners&gt;
-    &lt;listener class-name=&quot;com.qa.report.ExtendReportListener&quot;/&gt;
-  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Scientific Caclulator .Net Desktop App Test Cases&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.qa.testcases.CalculatorOperationsTest&quot;/&gt;
@@ -199,15 +229,19 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'calcOperationsTest')
+data.setCell(0, 1, 'calcDiffOperationsTest')
 data.setCell(0, 2, 'com.qa.testcases.CalculatorOperationsTest')
-data.setCell(0, 3, 72829);
+data.setCell(0, 3, 43129);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'calcTitleVerifyTest')
+data.setCell(1, 1, 'calcOperationsTest')
 data.setCell(1, 2, 'com.qa.testcases.CalculatorOperationsTest')
-data.setCell(1, 3, 416);
+data.setCell(1, 3, 30385);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'calcTitleVerifyTest')
+data.setCell(2, 2, 'com.qa.testcases.CalculatorOperationsTest')
+data.setCell(2, 3, 373);
 window.suiteTableData['Scientific_Caclulator_Test_Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Scientific_Caclulator_Test_Automation_Test_Suite'}
 return data;
 }
@@ -239,29 +273,59 @@ return data;
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
               <div class="chronological-class-name">com.qa.testcases.CalculatorOperationsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">startReport</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">0 ms</span>
+                <span class="method-start">244 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">calcTitleVerifyTest</span>
-                <span class="method-start">6709 ms</span>
+                <span class="method-start">6322 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">7127 ms</span>
+                <span class="method-start">6698 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=calcTitleVerifyTest status=SUCCESS method=CalculatorOperationsTest.calcTitleVerifyT...)</span>
+                <span class="method-start">6698 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">7205 ms</span>
+                <span class="method-start">7295 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">calcOperationsTest</span>
-                <span class="method-start">12381 ms</span>
+                <span class="method-name">calcDiffOperationsTest</span>
+                <span class="method-start">12331 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">85212 ms</span>
+                <span class="method-start">55463 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=calcDiffOperationsTest status=SUCCESS method=CalculatorOperationsTest.calcDiffOpera...)</span>
+                <span class="method-start">55464 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setUp</span>
+                <span class="method-start">55686 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">calcOperationsTest</span>
+                <span class="method-start">60770 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">91160 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method after">
+                <span class="method-name">getResult([TestResult name=calcOperationsTest status=FAILURE method=CalculatorOperationsTest.calcOperationsTes...)</span>
+                <span class="method-start">91160 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

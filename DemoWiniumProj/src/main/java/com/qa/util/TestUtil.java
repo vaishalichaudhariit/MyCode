@@ -24,7 +24,7 @@ public class TestUtil extends TestBase {
 	public String takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) winiumDriver).getScreenshotAs(OutputType.FILE);
 		String strPath = FileUtils.readFileToString(scrFile, "UTF-8");
-		String currentDir = System.getProperty("user.dir");
+		String currentDir = "C:\\Users\\Admin\\git\\MyCode\\Winium\\DemoWiniumProj";
 		FileUtils.copyFile(scrFile, new File(currentDir + "/screenshots/" + System.currentTimeMillis() + ".png"));
 		return strPath;
 	}
