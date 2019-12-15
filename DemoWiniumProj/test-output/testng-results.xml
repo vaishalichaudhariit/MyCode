@@ -2,66 +2,66 @@
 <testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Scientific Caclulator Test Automation Test Suite" duration-ms="94328" started-at="2019-11-20T08:02:48Z" finished-at="2019-11-20T08:04:22Z">
+  <suite name="Default suite" duration-ms="92906" started-at="2019-12-15T20:39:59Z" finished-at="2019-12-15T20:41:32Z">
     <groups>
     </groups>
-    <test name="Scientific Caclulator .Net Desktop App Test Cases" duration-ms="94328" started-at="2019-11-20T08:02:48Z" finished-at="2019-11-20T08:04:22Z">
+    <test name="Default test" duration-ms="92906" started-at="2019-12-15T20:39:59Z" finished-at="2019-12-15T20:41:32Z">
       <class name="com.qa.testcases.CalculatorOperationsTest">
-        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="startReport" is-config="true" duration-ms="213" started-at="2019-11-20T08:02:48Z" finished-at="2019-11-20T08:02:48Z">
+        <test-method status="PASS" signature="startReport()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="startReport" is-config="true" duration-ms="218" started-at="2019-12-15T20:39:59Z" finished-at="2019-12-15T20:39:59Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- startReport -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="setUp" is-config="true" duration-ms="6078" started-at="2019-11-20T08:02:48Z" finished-at="2019-11-20T08:02:54Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="setUp" is-config="true" duration-ms="5995" started-at="2019-12-15T20:39:59Z" finished-at="2019-12-15T20:40:05Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="calcTitleVerifyTest()[pri:1, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="calcTitleVerifyTest" duration-ms="373" started-at="2019-11-20T08:02:54Z" finished-at="2019-11-20T08:02:54Z">
+        <test-method status="PASS" signature="calcTitleVerifyTest()[pri:1, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="calcTitleVerifyTest" duration-ms="604" started-at="2019-12-15T20:40:05Z" finished-at="2019-12-15T20:40:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcTitleVerifyTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="getResult" is-config="true" duration-ms="595" started-at="2019-11-20T08:02:54Z" finished-at="2019-11-20T08:02:55Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-12-15T20:40:06Z" finished-at="2019-12-15T20:40:06Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="getResult" is-config="true" duration-ms="511" started-at="2019-12-15T20:40:06Z" finished-at="2019-12-15T20:40:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=calcTitleVerifyTest status=SUCCESS method=CalculatorOperationsTest.calcTitleVerifyTest()[pri:1, instance:com.qa.testcases.CalculatorOperationsTest@366647c2] output={null}]]]>
+                <![CDATA[[TestResult name=calcTitleVerifyTest status=SUCCESS method=CalculatorOperationsTest.calcTitleVerifyTest()[pri:1, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-20T08:02:54Z" finished-at="2019-11-20T08:02:54Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="setUp" is-config="true" duration-ms="5036" started-at="2019-11-20T08:02:55Z" finished-at="2019-11-20T08:03:00Z">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="setUp" is-config="true" duration-ms="5122" started-at="2019-12-15T20:40:06Z" finished-at="2019-12-15T20:40:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="calcDiffOperationsTest()[pri:2, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="calcDiffOperationsTest" duration-ms="43129" started-at="2019-11-20T08:03:00Z" finished-at="2019-11-20T08:03:43Z">
+        <test-method status="PASS" signature="calcDiffOperationsTest()[pri:2, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="calcDiffOperationsTest" duration-ms="43149" started-at="2019-12-15T20:40:11Z" finished-at="2019-12-15T20:40:54Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcDiffOperationsTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="tearDown" is-config="true" duration-ms="1" started-at="2019-11-20T08:03:43Z" finished-at="2019-11-20T08:03:43Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="getResult" is-config="true" duration-ms="221" started-at="2019-11-20T08:03:43Z" finished-at="2019-11-20T08:03:43Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="getResult" is-config="true" duration-ms="290" started-at="2019-12-15T20:40:54Z" finished-at="2019-12-15T20:40:55Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=calcDiffOperationsTest status=SUCCESS method=CalculatorOperationsTest.calcDiffOperationsTest()[pri:2, instance:com.qa.testcases.CalculatorOperationsTest@366647c2] output={null}]]]>
+                <![CDATA[[TestResult name=calcDiffOperationsTest status=SUCCESS method=CalculatorOperationsTest.calcDiffOperationsTest()[pri:2, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="setUp" is-config="true" duration-ms="5084" started-at="2019-11-20T08:03:43Z" finished-at="2019-11-20T08:03:48Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-15T20:40:54Z" finished-at="2019-12-15T20:40:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="setUp" is-config="true" duration-ms="5046" started-at="2019-12-15T20:40:55Z" finished-at="2019-12-15T20:41:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="FAIL" signature="calcOperationsTest()[pri:3, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="calcOperationsTest" duration-ms="30385" started-at="2019-11-20T08:03:48Z" finished-at="2019-11-20T08:04:19Z">
+        <test-method status="FAIL" signature="calcOperationsTest()[pri:3, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="calcOperationsTest" duration-ms="28801" started-at="2019-12-15T20:41:00Z" finished-at="2019-12-15T20:41:29Z">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[6 - 2=4 expected [6] but found [4]]]>
@@ -105,22 +105,22 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- calcOperationsTest -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="getResult" is-config="true" duration-ms="3380" started-at="2019-11-20T08:04:19Z" finished-at="2019-11-20T08:04:22Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="getResult" is-config="true" duration-ms="3331" started-at="2019-12-15T20:41:29Z" finished-at="2019-12-15T20:41:32Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=calcOperationsTest status=FAILURE method=CalculatorOperationsTest.calcOperationsTest()[pri:3, instance:com.qa.testcases.CalculatorOperationsTest@366647c2] output={null}]]]>
+                <![CDATA[[TestResult name=calcOperationsTest status=FAILURE method=CalculatorOperationsTest.calcOperationsTest()[pri:3, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@366647c2]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-11-20T08:04:19Z" finished-at="2019-11-20T08:04:19Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.qa.testcases.CalculatorOperationsTest@1649b0e6]" name="tearDown" is-config="true" duration-ms="0" started-at="2019-12-15T20:41:29Z" finished-at="2019-12-15T20:41:29Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.testcases.CalculatorOperationsTest -->
-    </test> <!-- Scientific Caclulator .Net Desktop App Test Cases -->
-  </suite> <!-- Scientific Caclulator Test Automation Test Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>
