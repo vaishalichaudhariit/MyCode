@@ -19,22 +19,23 @@ public class WaitsTimeOutTest {
     WebDriver driver;
 
     @BeforeClass
-    static void setupClass() {
-        WebDriverManager.chromedriver().setup();
+    public static void setupClass() {
+        //WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().driverVersion("109.0").setup();
     }
 
     @BeforeMethod
-    void setupTest() {
+    public void setupTest() {
         driver = new ChromeDriver();
     }
 
     @AfterMethod
-    void teardown() {
+    public void teardown() {
         driver.quit();
     }
 
     @Test
-    void test() {
+    public void test() {
     	
     	
     	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
@@ -42,10 +43,12 @@ public class WaitsTimeOutTest {
     	driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         // Exercise
         driver.get("https://bonigarcia.dev/selenium-webdriver-java/");
+        //driver.navigate().to("https://www.bonigarcia.dev/selenium-webdriver-java/");
         String title = driver.getTitle();
 
         // Verify
         assertTrue((title).contains("Selenium WebDriver"));
+        System.out.println("Title of the page is " + title);
     }
 	
 
