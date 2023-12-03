@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-06-12T15:20:23Z" name="Suite" finished-at="2023-06-12T15:20:31Z" duration-ms="7314">
+    <groups>
+    </groups>
+    <test started-at="2023-06-12T15:20:23Z" name="Test" finished-at="2023-06-12T15:20:31Z" duration-ms="7314">
+      <class name="chaining_withTestNG.CreateUser">
+        <test-method signature="test_createUser(org.testng.ITestContext)[pri:0, instance:chaining_withTestNG.CreateUser@ed7f8b4]" started-at="2023-06-12T15:20:23Z" name="test_createUser" finished-at="2023-06-12T15:20:27Z" duration-ms="4153" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2fd1433e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_createUser -->
+      </class> <!-- chaining_withTestNG.CreateUser -->
+      <class name="chaining_withTestNG.DeleteUser">
+        <test-method signature="test_DeleteUser(org.testng.ITestContext)[pri:0, instance:chaining_withTestNG.DeleteUser@37883b97]" started-at="2023-06-12T15:20:30Z" name="test_DeleteUser" finished-at="2023-06-12T15:20:31Z" duration-ms="1006" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2fd1433e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_DeleteUser -->
+      </class> <!-- chaining_withTestNG.DeleteUser -->
+      <class name="chaining_withTestNG.UpdateUser">
+        <test-method signature="test_updateUser(org.testng.ITestContext)[pri:0, instance:chaining_withTestNG.UpdateUser@38102d01]" started-at="2023-06-12T15:20:29Z" name="test_updateUser" finished-at="2023-06-12T15:20:30Z" duration-ms="1009" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2fd1433e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_updateUser -->
+      </class> <!-- chaining_withTestNG.UpdateUser -->
+      <class name="chaining_withTestNG.GetUser">
+        <test-method signature="test_getUSer(org.testng.ITestContext)[pri:0, instance:chaining_withTestNG.GetUser@4c309d4d]" started-at="2023-06-12T15:20:27Z" name="test_getUSer" finished-at="2023-06-12T15:20:29Z" duration-ms="1096" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2fd1433e]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- test_getUSer -->
+      </class> <!-- chaining_withTestNG.GetUser -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
